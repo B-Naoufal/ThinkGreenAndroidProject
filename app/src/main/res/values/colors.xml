@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FaC61</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sp_back">#FF4419</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#78c0a8</color>
+    <color name="fill">#1dd2af</color>
+    <color name="whitef">#ECF0F1</color>
+    <color name="first_action_bar">#1dd2a8</color>e4edf1
+    <color name="Gris">#e4edf1</color>
+    <color name="blue">#3F51B5</color>
+    <color name="gris_zlaffa">#dfdad2</color>
+
+
+    <color name="colorPrimaryDark">@android:color/transparent</color>
+    <color name="windowBackground">#313131</color>
+
+    <color name="black_overlay">#58696a</color>
+    <color name="backgroundtext_card">#53292929</color>
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.club_hayat.ThinkGreen.HomeActivity">
+
+    <com.github.mzule.fantasyslide.FantasyDrawerLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contenaire">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/etaage1"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/eecos"
+                android:id="@+id/empeco_draw"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                app:srcCompat="@mipmap/favoris"
+                android:id="@+id/favoris"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etage2"
+            android:layout_below="@+id/etaage1"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/co2s"
+                android:id="@+id/co2_draw"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/idderecycages"
+                android:id="@+id/recycl_draw"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etage3"
+            android:layout_below="@+id/etage2"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/terres"
+                android:id="@+id/terre_draw"
+                android:layout_below="@+id/etage2"
+                android:layout_marginLeft="95dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.github.mzule.fantasyslide.SideBar
+        android:id="@+id/leftSideBar"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        app:maxTranslationX="66dp">
+
+        <LinearLayout
+            android:id="@+id/userInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <com.club_hayat.ThinkGreen.Custom.CircleImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/hayat"
+                app:civ_border_color="@color/menu_text_color"
+                app:civ_border_width="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Club HAYAT"
+                android:textColor="@color/menu_text_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/MenuText"
+            android:drawableLeft="@drawable/circle"
+            android:text="HOME" />
+
+        <TextView
+            style="@style/MenuText"
+            android:drawableLeft="@drawable/wallet"
+            android:text="FAVORIS" />
+
+        <TextView
+            style="@style/MenuText"
+            android:drawableLeft="@drawable/coupon"
+            android:text="TUTORIELS" />
+
+        <TextView
+            style="@style/MenuText"
+            android:drawableLeft="@drawable/friends"
+            android:text="COP" />
+
+    </com.github.mzule.fantasyslide.SideBar>
+
+    <com.github.mzule.fantasyslide.SideBar
+        android:id="@+id/rightSideBar"
+        android:layout_width="133dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_right_bar"
+        android:gravity="center_vertical|right"
+        app:maxTranslationX="-33dp">
+
+
+        <TextView
+            style="@style/MenuText"
+            android:text="CARTON" />
+
+        <TextView
+            style="@style/MenuText"
+            android:text="PLASTIQUE" />
+
+        <TextView
+            style="@style/MenuText"
+            android:text="PAPIER" />
+
+        <TextView
+            style="@style/MenuText"
+            android:text="CANETTES" />
+
+        <TextView
+            style="@style/MenuText"
+            android:text="VERRE" />
+
+        <TextView
+            style="@style/MenuText"
+            android:text="TISSU" />
+
+        <TextView
+            style="@style/MenuText"
+            android:text="BOIS" />
+    </com.github.mzule.fantasyslide.SideBar>
+</com.github.mzule.fantasyslide.FantasyDrawerLayout>
+
+</RelativeLayout>

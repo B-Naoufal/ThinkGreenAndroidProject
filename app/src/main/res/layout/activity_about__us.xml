@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about__us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.club_hayat.ThinkGreen.About_Us"
+    android:background="@drawable/backaboutus">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/WV"
+        android:visibility="gone">
+
+    </WebView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/naoufal"
+        android:id="@+id/bnf"
+        android:layout_marginTop="520dp"
+        android:layout_below="@+id/WV"
+        android:layout_toEndOf="@+id/WV"
+        android:layout_marginStart="150dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

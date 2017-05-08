@@ -1,0 +1,13 @@
+<resources>
+    <string name="content_description_item_custom_image">image</string>
+    <string name="app_name">Think Green</string>
+    <string name="text">Developed by Club HAYAT</string>
+    <string name="content_description_cell_custom_image">image</string>
+    <string name="title_activity_web_view">Web_view</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="transitionname_picture">transitionnamepicture</string>
+    <string name="username_card">Club HAYAT</string>
+    <string name="firstword_card">Since</string>
+    <string name="timecard_card">4 days</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.club_hayat.ThinkGreen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MainaActivityy">
+        <service
+            android:name="com.club_hayat.ThinkGreen.BackgroundSoundService"
+            android:enabled="true" />
+        <activity android:name="com.club_hayat.ThinkGreen.MainActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.club_hayat.ThinkGreen.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityy" />
+        <activity
+            android:name="com.club_hayat.ThinkGreen.CATEGORIES.CategoriesActivity"
+            android:theme="@style/CategoriesActivity" />
+        <activity
+            android:name="com.club_hayat.ThinkGreen.OpenWeb"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/OpenWEbb" />
+        <activity android:name="com.club_hayat.ThinkGreen.NotreTerre" />
+        <activity android:name="com.club_hayat.ThinkGreen.ActionBar" />
+        <activity android:name="com.club_hayat.ThinkGreen.About_Us" />
+        <activity android:name="com.club_hayat.ThinkGreen.Favoris" />
+        <activity android:name="com.club_hayat.ThinkGreen.EmissionCO2"
+            android:screenOrientation="landscape"
+            android:theme="@style/OpenWEbb"
+            />
+        <activity android:name="com.club_hayat.ThinkGreen.CATEGORIES.CARTON" />
+        <activity
+            android:name="com.club_hayat.ThinkGreen.Youtubeplayer"
+            android:screenOrientation="sensorLandscape"
+        />
+    </application>
+
+</manifest>

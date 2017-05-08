@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.club_hayat.ThinkGreen.ActionBar">
+
+    <com.github.mzule.fantasyslide.FantasyDrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.github.mzule.fantasyslide.SideBar
+            android:id="@+id/leftSideBar"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/fill"
+            android:gravity="center_vertical"
+            app:maxTranslationX="66dp">
+
+            <LinearLayout
+                android:id="@+id/userInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <com.club_hayat.ThinkGreen.Custom.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    app:civ_border_color="@color/menu_text_color"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Club HAYAT"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/circle"
+                android:text="HOME"
+                android:id="@+id/HOME"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/wallet"
+                android:text="FAVORIS"
+                android:id="@+id/FAVORIS"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="TUTOS"
+                android:id="@+id/TUTOS"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/friends"
+                android:text="COP"
+                android:id="@+id/TERRE"/>
+
+
+        </com.github.mzule.fantasyslide.SideBar>
+
+        <com.github.mzule.fantasyslide.SideBar
+            android:id="@+id/rightSideBar"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_right_bar"
+            android:gravity="center_vertical|right"
+            app:maxTranslationX="-33dp">
+
+            <TextView
+                style="@style/MenuText"
+                android:text="CARTON"
+                android:id="@+id/CARTON"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:text="PLASTIQUE"
+                android:id="@+id/PLASTIQUE"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:text="PAPIER"
+                android:id="@+id/PAPIER"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:text="CANETTE"
+                android:id="@+id/CANETTE"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:text="VERRE"
+                android:id="@+id/VERRE"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:text="TISSU"
+                android:id="@+id/TISSU"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:text="BOIS" />
+        </com.github.mzule.fantasyslide.SideBar>
+    </com.github.mzule.fantasyslide.FantasyDrawerLayout>
+
+</RelativeLayout>
